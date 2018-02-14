@@ -1,0 +1,10 @@
+<h1>All current students:</h1>
+<% @students.each do |student| %>
+  <p>
+    Student Name : <%= student.pretty_name() %>
+    <br />
+    House : <%= student.house %>
+    <br />
+    Age : <%= student.age %>
+  </p>
+<% end %>
