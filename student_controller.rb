@@ -3,6 +3,7 @@ require("sinatra/contrib/all")
 require("pry-byebug")
 
 require_relative("./models/students.rb")
+require_relative("./models/houses.rb")
 
 # index
 get "/enrolled-students" do
@@ -19,6 +20,7 @@ end
 
 # new
 get "/enrolled-students/new" do
+  @houses = House.all()
   erb(:new)
 end
 
