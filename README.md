@@ -56,3 +56,9 @@ Add a method to Student to find a house() for the student
 Part 9
 
 Change the new student form to populate the drop down from the House table
+
+localhost:4567/enrolled-students
+
+requires creation of psql database 'hogwarts' and running of hogwarts.sql to create tables
+
+sinatra 
